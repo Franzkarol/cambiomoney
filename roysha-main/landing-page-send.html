@@ -26,6 +26,22 @@
     <!-- Color Palette. simple uncommned if you need any color palette -->
     <!-- <link rel="stylesheet" href="css/switcher/css/red.css"> -->
 
+    <style type="text/css">
+        #google_translate_element {
+            display: none;
+        }
+        /*
+        .goog-te-banner-frame {
+            display: none !important;
+        }
+        
+        body {
+            position: static !important;
+            top: 0 !important;
+        }
+        */
+    </style>
+
     <title>Money Cambio</title>
 </head>
 
@@ -37,6 +53,18 @@
             <a class="logo" href="index.html">
                 <img src="images/logo.png" alt="">
             </a>
+
+            <div id="google_translate_element" class="boxTradutor"></div>
+
+            <a href="javascript:trocarIdioma('pt')">
+                <img alt="portugues" src="images/brasil.png" style=" width: 50px;
+                height: 50px;
+                padding: 2px;"></a>
+            <a href="javascript:trocarIdioma('en')">
+                <img alt="ingles" src="images/estado-unidos.png" style=" width: 50px;
+                height: 50px;
+                padding: 2px;"></a>
+
             <nav class="primary-menu text-md-right">
                 <a id="mobile-menu-toggler" href="#"><i class="fas fa-bars"></i></a>
                 <ul>
@@ -325,11 +353,10 @@
                                 <!-- Roysha icon -->
                                 <span class="roysha-icon roysha-fast-transfer"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span>
                                 <span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span>
-                                <span
-                                    class="path16"></span>
-                                    <span class="path17"></span><span class="path18"></span></span>
+                                <span class="path16"></span>
+                                <span class="path17"></span><span class="path18"></span></span>
 
-                                    Mobile Banking
+                                Mobile Banking
                             </a>
                         </li>
                         <li class="col-md-3">
@@ -338,11 +365,10 @@
                                 <!-- Roysha icon -->
                                 <span class="roysha-icon roysha-bank-diposite"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span>
                                 <span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span>
-                                <span
-                                    class="path16"></span>
-                                    </span>
+                                <span class="path16"></span>
+                                </span>
 
-                                    Fees and Charges
+                                Fees and Charges
                             </a>
                         </li>
                     </ul>
@@ -618,6 +644,39 @@
         </div>
     </footer>
     <!-- Footer end -->
+
+    <script type="text/javascript">
+        var comboGoogleTradutor = null; //Varialvel global
+
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,pt',
+                layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+            }, 'google_translate_element');
+
+            comboGoogleTradutor = document.getElementById("google_translate_element").querySelector(".goog-te-combo");
+        }
+
+        function changeEvent(el) {
+            if (el.fireEvent) {
+                el.fireEvent('onchange');
+            } else {
+                var evObj = document.createEvent("HTMLEvents");
+
+                evObj.initEvent("change", false, true);
+                el.dispatchEvent(evObj);
+            }
+        }
+
+        function trocarIdioma(sigla) {
+            if (comboGoogleTradutor) {
+                comboGoogleTradutor.value = sigla;
+                changeEvent(comboGoogleTradutor); //Dispara a troca
+            }
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     <!-- JS -->
     <script src="js/jquery-3.3.1.min.js"></script>

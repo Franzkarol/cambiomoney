@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,7 +14,7 @@
     <!-- Roysha icon -->
     <link rel="stylesheet" href="css/roysha-icons.css">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/nice-select.css">
@@ -21,37 +22,64 @@
 
     <!-- custom css if you need -->
     <link rel="stylesheet" href="css/custom.css">
-    
+
     <!-- Color Palette. simple uncommned if you need any color palette -->
     <!-- <link rel="stylesheet" href="css/switcher/css/red.css"> -->
 
+    <style type="text/css">
+        #google_translate_element {
+            display: none;
+        }
+        /*
+      .goog-te-banner-frame {
+          display: none !important;
+      }
+      
+      body {
+          position: static !important;
+          top: 0 !important;
+      }
+      */
+    </style>
+
     <title>Money Cambio</title>
-  </head>
-  <body class="coming-page">
-    
-    
+</head>
+
+<body class="coming-page">
+
+    <div id="google_translate_element" class="boxTradutor"></div>
+
+    <a href="javascript:trocarIdioma('pt')">
+        <img alt="portugues" src="images/brasil.png" style=" width: 50px;
+        height: 50px;
+        padding: 2px;"></a>
+    <a href="javascript:trocarIdioma('en')">
+        <img alt="ingles" src="images/estado-unidos.png" style=" width: 50px;
+        height: 50px;
+        padding: 2px;"></a>
+
     <!-- Coming section start -->
     <section class="coming-sec">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 m-auto">
-            <div class="sec-heading">
-              <h2 class="sec-title">We Are Coming Soon</h2>
-              <p class="sec-subtitle">Our exciting new website is coming soon, Stay connected...</p>
-            </div>
-            <div class="text-center" id="clock"></div>
-            <form class="bill-form v2 text-center" action="#">
-              <h3>Stay connected</h3>
-              <div class="form-field">
-                <div class="join-field">
-                  <input type="text" placeholder="Type a question...">
-                  <button class="btn btn-block btn-filled form-btn"><span class="bh"></span> <span>Search</span></button>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 m-auto">
+                    <div class="sec-heading">
+                        <h2 class="sec-title">We Are Coming Soon</h2>
+                        <p class="sec-subtitle">Our exciting new website is coming soon, Stay connected...</p>
+                    </div>
+                    <div class="text-center" id="clock"></div>
+                    <form class="bill-form v2 text-center" action="#">
+                        <h3>Stay connected</h3>
+                        <div class="form-field">
+                            <div class="join-field">
+                                <input type="text" placeholder="Type a question...">
+                                <button class="btn btn-block btn-filled form-btn"><span class="bh"></span> <span>Search</span></button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-              </div>
-            </form>
-          </div>        
+            </div>
         </div>
-      </div>
     </section>
     <!-- Coming section end -->
 
@@ -64,8 +92,9 @@
     <script src="js/jquery.countdown.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/jquery.nice-select.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/106949/jquery.onscreen.js"></script>
     <script src="js/scripts.js"></script>
-  </body>
+</body>
+
 </html>
