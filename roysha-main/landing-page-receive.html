@@ -41,6 +41,15 @@ body {
     top: 0 !important;
 }
 */
+        
+        #div_fixa {
+            position: fixed;
+            margin: 15px;
+            margin-top: 300px;
+            z-index: 5000;
+            bottom: 0px;
+            right: 10px;
+        }
     </style>
 
     <title>Money Cambio</title>
@@ -52,53 +61,57 @@ body {
     <header class="header">
         <div class="container d-flex align-items-center">
             <a class="logo" href="index.html">
-                <img src="images/logo.png" alt="">
-            </a>
-            <div id="google_translate_element" class="boxTradutor"></div>
+                <a class="logo" href="index.html">
+                    <img src="images/logo.png" alt="" style="left: -50px;">
+                </a>
 
-            <a href="javascript:trocarIdioma('pt')">
-                <img alt="portugues" src="images/brasil.png" style=" width: 50px;
-          height: 50px;
-          padding: 2px;"></a>
-            <a href="javascript:trocarIdioma('en')">
-                <img alt="ingles" src="images/estado-unidos.png" style=" width: 50px;
-          height: 50px;
-          padding: 2px;"></a>
+                <div id="google_translate_element" class="boxTradutor"></div>
 
-            <nav class="primary-menu text-md-right">
-                <a id="mobile-menu-toggler" href="#"><i class="fas fa-bars"></i></a>
-                <ul>
-                    <li class="current-menu-item has-menu-child"><a href="home-01.html">Home</a>
-                    </li>
-                    <li><a href="landing-page-send.html">Send Money</a></li>
-                    <li><a href="landing-page-receive.html">Receive Money</a></li>
-                    <li class="has-menu-child"><a href="#">Pages</a>
-                        <ul class="sub-menu">
-                            <li><a href="how-it-works-send.html">How it works - Send</a></li>
-                            <li><a href="how-it-works-receive.html">How it works - Receive</a></li>
-                            <li><a href="how-it-works-paybills.html">How it works - Paybills</a></li>
-                            <li><a href="landing-page-ecommerce.html">Landing - Ecommerce</a></li>
-                            <li><a href="faq.html">Faq</a></li>
-                            <li><a href="404.html">404 Error page</a></li>
-                            <li><a href="coming-soon.html">Coming soon</a></li>
-                            <li><a href="signup.html">Sign up</a></li>
-                        </ul>
-                    </li>
-                    <li class="has-menu-child">
-                        <a href="about-01.html ">About</a>
-                    </li>
-                    <li class="has-menu-child">
-                        <a href="blog.html">Blog</a>
-                        <ul class="sub-menu">
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="blog-details.html">Blog Details</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="login.html" class="login btn btn-outline btn-round"><span class="bh"></span>
+                <a href="javascript:trocarIdioma('pt')">
+                    <img alt="portugues" src="images/brasil.png" style=" width: 40px;
+                    height: 40px;
+                    padding: 2px;
+                    left: -40px;"></a>
+                <a href="javascript:trocarIdioma('en')">
+                    <img alt="ingles" src="images/estado-unidos.png" style=" width: 50px;
+                    height: 50px;
+                    padding: 2px;
+                    left: -40px;"></a>
+
+                <nav class="primary-menu text-md-right">
+                    <a id="mobile-menu-toggler" href="#"><i class="fas fa-bars"></i></a>
+                    <ul>
+                        <li class="current-menu-item has-menu-child"><a href="home-01.html">Home</a>
+                        </li>
+                        <li><a href="landing-page-send.html">Send Money</a></li>
+                        <li><a href="landing-page-receive.html">Receive Money</a></li>
+                        <li class="has-menu-child"><a href="#">Pages</a>
+                            <ul class="sub-menu">
+                                <li><a href="how-it-works-send.html">How it works - Send</a></li>
+                                <li><a href="how-it-works-receive.html">How it works - Receive</a></li>
+                                <li><a href="how-it-works-paybills.html">How it works - Paybills</a></li>
+                                <li><a href="landing-page-ecommerce.html">Landing - Ecommerce</a></li>
+                                <li><a href="faq.html">Faq</a></li>
+                                <li><a href="404.html">404 Error page</a></li>
+                                <li><a href="coming-soon.html">Coming soon</a></li>
+                                <li><a href="signup.html">Sign up</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-menu-child">
+                            <a href="about-01.html ">About</a>
+                        </li>
+                        <li class="has-menu-child">
+                            <a href="blog.html">Blog</a>
+                            <ul class="sub-menu">
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="blog-details.html">Blog Details</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html" class="login btn btn-outline btn-round"><span class="bh"></span>
               <span>login</span></a></li>
-                </ul>
-            </nav>
+                    </ul>
+                </nav>
         </div>
     </header>
     <!-- Header end -->
@@ -171,10 +184,9 @@ body {
 
                         <!-- Roysha icon -->
                         <span class="roysha-icon roysha-hand-cash"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span>
-                        <span
-                            class="path8"></span><span class="path9"></span><span class="path10"></span></span>
+                        <span class="path8"></span><span class="path9"></span><span class="path10"></span></span>
 
-                            <h5><a href="#">Cash Pickup</a></h5>
+                        <h5><a href="#">Cash Pickup</a></h5>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -182,10 +194,9 @@ body {
 
                         <!-- Roysha icon -->
                         <span class="roysha-icon roysha-mobile-bank"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span>
-                        <span
-                            class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span></span>
+                        <span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span></span>
 
-                            <h5><a href="#">Mobile Wallet</a></h5>
+                        <h5><a href="#">Mobile Wallet</a></h5>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -193,10 +204,9 @@ body {
 
                         <!-- Roysha icon -->
                         <span class="roysha-icon roysha-cash-pin"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span>
-                        <span
-                            class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span></span>
+                        <span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span></span>
 
-                            <h5><a href="#">Cash by PIN</a></h5>
+                        <h5><a href="#">Cash by PIN</a></h5>
                     </div>
                 </div>
             </div>
@@ -449,6 +459,13 @@ body {
                                 <li><a href="#">Notice</a></li>
                             </ul>
                         </div>
+                        <!-- whats app -->
+                        <div id="div_fixa">
+                            <a href="whatsapp.php" target="_blank">
+                                <img src="images/api-whatsapp-site.jpg" width="54">
+                            </a>
+                        </div>
+                        <!--Fim Whats app-->
                     </div>
                     <div class="col-md-6">
                         <div class="copyright">Copyright &copy; <a href="http://themeies.com">themeies</a> - 2019</div>

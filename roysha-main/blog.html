@@ -40,6 +40,15 @@
         top: 0 !important;
     }
     */
+        
+        #div_fixa {
+            position: fixed;
+            margin: 15px;
+            margin-top: 300px;
+            z-index: 5000;
+            bottom: 0px;
+            right: 10px;
+        }
     </style>
 
     <title>Money Cambio</title>
@@ -51,20 +60,21 @@
     <header class="header">
         <div class="container d-flex align-items-center">
             <a class="logo" href="index.html">
-                <img src="images/logo.png" alt="">
+                <img src="images/logo.png" alt="" style="left: -50px;">
             </a>
 
             <div id="google_translate_element" class="boxTradutor"></div>
 
             <a href="javascript:trocarIdioma('pt')">
-                <img alt="portugues" src="images/brasil.png" style=" width: 50px;
-          height: 50px;
-          padding: 2px;"></a>
+                <img alt="portugues" src="images/brasil.png" style=" width: 40px;
+                height: 40px;
+                padding: 2px;
+                left: -40px;"></a>
             <a href="javascript:trocarIdioma('en')">
                 <img alt="ingles" src="images/estado-unidos.png" style=" width: 50px;
-          height: 50px;
-          padding: 2px;"></a>
-
+                height: 50px;
+                padding: 2px;
+                left: -40px;"></a>
             <nav class="primary-menu text-md-right">
                 <a id="mobile-menu-toggler" href="#"><i class="fas fa-bars"></i></a>
                 <ul>
@@ -356,6 +366,13 @@
                                 <li><a href="#">Notice</a></li>
                             </ul>
                         </div>
+                        <!-- whats app -->
+                        <div id="div_fixa">
+                            <a href="whatsapp.php" target="_blank">
+                                <img src="images/api-whatsapp-site.jpg" width="54">
+                            </a>
+                        </div>
+                        <!--Fim Whats app-->
                     </div>
                     <div class="col-md-6">
                         <div class="copyright">Copyright &copy; <a href="http://themeies.com">themeies</a> - 2019</div>
